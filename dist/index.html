@@ -1,0 +1,48 @@
+<head>
+  <link rel="icon" href="img/calc.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/header.css">
+</head>
+
+<body>
+  <script src="main.js"></script>
+  <script src="non-compile.js"></script>
+
+  <img src="img/calclogo.png" alt="Stylized font that says Trump Tax Calculator" id="logo">
+
+  <div id="formContainer">
+  <form id='tax_form'>
+      <h1>How much did you pay in taxes last year?</h1>
+      <input type="number" id="taxes">
+    <br>
+    <br>
+      <h1>What's your annual income?</h1>
+      <input type="number" id="income">
+    <br>
+    <br>
+      <input type="button" onclick="showTaxes()" value="Calculate" class="button btnbig" />
+  </form>
+  </div>
+
+  <p id="taxes_message" class="bigtext"></p>
+  <p id="income_message" class="mediumtext"></p>
+  <p id="billionaire" class="mediumtext"></p>
+  <br>
+  <p id="donate" style="font-size:1em; margin-top: 5px;"></p>
+  <p id="donate2" style="font-size:1em; margin-top: 5px;"></p>
+  <p id="play_again" style="font-size:1em; margin-top: 5px;"></p>
+  <p id='nytimes' class="smalltext"></p>
+
+  <div id="who" style="display: none;">
+  We'd also like him gone. Find us at https://www.kyleogilvie.com/ & https://www.maryannbadavi.com/
+  </div>
+
+  <div id="share-div">
+    <!--Facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0" nonce="Am7o5Abz"></script>
+    <div class="fb-share-button" data-href="https://www.trumptaxcalculator.com" data-layout="button" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fwww.trumptaxcalculator.com%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+
+    <!--Twitter -->
+    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-text="Donald Trump paid less in taxes than you." data-url="https://www.trumptaxcalculator.com" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+  </div>
+</body>
