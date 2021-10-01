@@ -1,4 +1,4 @@
-<script>function showTaxes(){
+function showTaxes(){
   var message = document.getElementById("taxes");
   var taxes = message.value;
   var income = document.getElementById("income").value;
@@ -23,27 +23,6 @@
   nytimes.innerHTML = "\“Donald J. Trump paid $750 in federal income taxes the year he won the presidency. In his first year in the White House, he paid another $750…. His potential taxable income in 2016 and 2017 included $24.8 million in profits from sources related to his celebrity status and $56.4 million for the loans he did not repay.\” -<a href=\"https://www.nytimes.com/interactive/2020/09/27/us/donald-trump-taxes.html\">The New York Times</a>";
   var title = document.getElementById("site-title");
   tax_form.style.display = "none";
-  var footer = document.getElementByTagName("footer");
+  var footer = document.getElementsByTagName("footer");
   footer.style.display = "block";
 };
-</script>
-
-<form id='tax_form'>
-<h1>How much did you pay in taxes last year?</h1>
-<input type="number" id="taxes">
-<br><br>
-<h1>What's your annual income?</h1>
-<input type="number" id="income">
-<br> <br>
-<input type="button" onclick="showTaxes()" value="Calculate" class="button btnbig" />
-</form>
-
-<p id="taxes_message" class="bigtext"></p>
-
-<p id="income_message" class="mediumtext"></p>
-<p id="billionaire" class="mediumtext"></p>
-<br>
-<p id="donate" style="font-size:1em; margin-top: 5px;"></p>
-<p id="donate2" style="font-size:1em; margin-top: 5px;"></p>
-<p id="play_again" style="font-size:1em; margin-top: 5px;"></p>
-<p id='nytimes' class="smalltext"></p>

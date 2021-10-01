@@ -1,0 +1,46 @@
+body {
+    font-family: Helvetica, Arial, sans-serif;
+    text-align: center;
+  }
+#logo {
+  margin-right: 25%;
+  margin-left: 25%;
+  margin-bottom: 10%;
+}
+div#formContainer {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  text-align: center;
+}
+.bigtext {
+  font-size: 2em;
+}
+.mediumtext {
+  font-size: 1.5em;
+}
+.smalltext {
+  font-size: .5em;
+}
+.btnbig {
+  background-color: #1652DF;
+  color: white;
+  border: 0px;
+  font-size: 1.5em;
+  padding: 15px;
+  margin: 15px;
+}
+.btnsmall {
+  background-color: #1652DF;
+  color: white;
+  font-size: 1.25em;
+  padding: 15px;
+  border: 0px;
+  margin: 15px;
+}
+.button{
+  display: inline-block;
+}
+#share-div{
+  margin-top: 5%;
+}
